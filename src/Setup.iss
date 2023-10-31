@@ -3,9 +3,9 @@
 #include ".\Modules\ISFreeArcExtract\ISFreeArcExtract_Core.iss"
 
 #define Name "STALKER on UE - Shadow of Chernobyl"
-#define Ver "Build 134"
+#define Ver "Build 362"
 
-#define DirName "STALKER on UE SoC Build 134" ;Название папки
+#define DirName "STALKER on UE SoC Build 362" ;Название папки
 #define EXE "Stalker.exe"
 
 #define Size "5272084480" ;В байтах
@@ -17,7 +17,7 @@
 
 [Setup]
 AppName=STALKER on UE - Shadow of Chernobyl
-AppVersion=Build 134
+AppVersion=Build 362
 AppVerName={#Name} ({#Ver})
 DefaultDirName={pf}\{#DirName}
 ExtraDiskSpaceRequired={#Size}
