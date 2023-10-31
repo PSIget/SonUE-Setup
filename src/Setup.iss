@@ -158,13 +158,13 @@ begin
     Result.Parent := Parent;
 
     if Left > 0 then
-      Result.Left:= ScaleX(Left);
+      Result.Left:= Left;
     if Top > 0 then
       Result.Top:= WizardForm.ClientHeight - ScaleY(11 + Width);
     if Width > 0 then
-      Result.Width:= ScaleY(Width);
+      Result.Width:= Width;
     if Height > 0 then
-      Result.Height:= ScaleX(Height);
+      Result.Height:= Height;
 
     Result.Anchors := [akLeft, akBottom];
     Result.Stretch := True;

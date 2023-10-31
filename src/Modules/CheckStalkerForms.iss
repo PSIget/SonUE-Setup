@@ -77,8 +77,8 @@ Begin
     Caption := cm('StalkerCheckBrowse');
     WordWrap := true;
     AutoSize := false;
-    Left := ScaleX(0);
-    Top := ScaleY(WizardForm.DirEdit.Top + WizardForm.DirEdit.Height + 16);
+    Left := 0;
+    Top := WizardForm.DirEdit.Top + WizardForm.DirEdit.Height + 16;
     Width := ScaleX(WizardForm.SelectDirBrowseLabel.Width);
     Height := ScaleY(27);
     Anchors := [akLeft, akTop, akRight];
@@ -89,10 +89,10 @@ Begin
   with CheckStalkerCB do
   begin
     Parent := WizardForm.SelectDirPage;
-    Left := ScaleX(0);
-    Top := ScaleY(CheckStalkerInfo.Height + CheckStalkerInfo.Top + 8);
-    Width := ScaleX(WizardForm.DirEdit.Width);
-    Height := ScaleY(WizardForm.DirEdit.Height);
+    Left := 0;
+    Top := CheckStalkerInfo.Height + CheckStalkerInfo.Top + 8;
+    Width := WizardForm.DirEdit.Width;
+    Height := WizardForm.DirEdit.Height;
     Style := csDropDownList; // Allows the user to select an option, not edit text
     OnChange := @CheckStalkerCBChange;
 
@@ -115,8 +115,8 @@ Begin
   begin
     Parent := WizardForm.SelectDirPage;
     Caption := SetupMessage(msgButtonBrowse);
-    Left := ScaleX(CheckStalkerCB.Width + 10);
-    Top := ScaleY(CheckStalkerCB.Top - 1);
+    Left := CheckStalkerCB.Width + 10;
+    Top := CheckStalkerCB.Top - 1;
     Width := ScaleX(75);
     Height := ScaleY(23);
     Anchors := [akTop, akRight];
@@ -129,8 +129,8 @@ Begin
   begin
     Name := 'Label2';
     Parent := WizardForm.SelectDirPage;
-    Left := ScaleX(0);
-    Top := ScaleY(CheckStalkerCB.Height + CheckStalkerCB.Top + 8);
+    Left := 0;
+    Top := CheckStalkerCB.Height + CheckStalkerCB.Top + 8;
     Width := ScaleX(WizardForm.SelectDirBrowseLabel.Width);
     Height := ScaleY(13);
     Anchors := [akLeft, akTop, akRight];
