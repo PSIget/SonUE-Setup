@@ -19,7 +19,7 @@
 AppName=STALKER on UE - Shadow of Chernobyl
 AppVersion=Build 362
 AppVerName={#Name} ({#Ver})
-DefaultDirName={pf}\{#DirName}
+DefaultDirName={sd}\Games\{#DirName}
 ExtraDiskSpaceRequired={#Size}
 DirExistsWarning=no
 ShowLanguageDialog=auto
