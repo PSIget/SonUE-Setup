@@ -1,33 +1,33 @@
-# Мастер Установки для проекта [STALKER on UE](https://git.s2ue.org/RedProjects/SonUE)
+# Installation Wizard for the [STALKER on UE](https://git.s2ue.org/RedProjects/SonUE) project
 
-Мастер Установки на основе Inno Setup, который прост в использовании, но в то же время отвечает всем требованиям проекта.
+An Inno Setup-based Installation Wizard that is easy to use while meeting all project requirements.
 
-## Особенности установщика
+## Installer Features
 
-Мастер Установки поддерживает три языка: русский, английский и украинский.
+The Installation Wizard supports three languages: Russian, English, and Ukrainian.
 
-Перед началом установки программа автоматически находит все установленные версии игры "S.T.A.L.K.E.R.: Shadow of Chernobyl". Если игра уже установлена, установщик продолжит процесс. Если же игры нет, установка не будет возможна - это необходимо для соблюдения авторских прав.
+Before starting the installation, the program automatically detects all installed versions of the "S.T.A.L.K.E.R.: Shadow of Chernobyl" game. If the game is already installed, the installer will proceed with the process. If the game is not present, installation will not be possible - this is necessary to comply with copyright laws.
 
-## Как собрать установщик
+## How to Build the Installer
 
-### Редактирование версии сборки
+### Editing the build version
 
-Версию сборки можно отредактировать в файле `./src/Setup.iss`.
+The build version can be edited in the `./src/Setup.iss` file.
 
-### Сборка файла установки (Setup)
+### Building the installation file (Setup)
 
-1. Скачайте и установите последнюю версию [Inno Setup](https://jrsoftware.org/isdl.php).
-2. Откройте файл `./src/Setup.iss` в Inno Setup.
-3. Нажмите `Ctrl+F9` или выберите `Build > Compile`.
+1. Download and install the latest version of [Inno Setup](https://jrsoftware.org/isdl.php).
+2. Open the `./src/Setup.iss` file in Inno Setup.
+3. Press `Ctrl+F9` or select `Build > Compile`.
 
-### Создание архива (упаковка игровых файлов)
+### Creating an archive (packing game files)
 
-1. Переместите игровые файлы в папку `./pack/Input`.
-2. Запустите `./pack/Pack.cmd` и подождите. Запаковка может занять некоторое время.
-3. По завершении упаковки переместите файл `./pack/Output/Data.bin` в `./src/Output`.
+1. Move the game files to the `./pack/Input` folder.
+2. Run `./pack/Pack.cmd` and wait. Packing may take some time.
+3. After packing is complete, move the `./pack/Output/Data.bin` file to `./src/Output`.
 
-Теперь установщик готов к тестированию и распространению!
+Now the installer is ready for testing and distribution!
 
-## Важно
+## Important
 
-Пожалуйста, убедитесь, что вы используете последние версии всех инструментов и следуете инструкциям по сборке. Если у вас возникнут проблемы или вопросы, не стесняйтесь обращаться за помощью.
+Please ensure that you are using the latest versions of all tools and follow the build instructions. If you encounter any problems or have questions, feel free to ask for help.
